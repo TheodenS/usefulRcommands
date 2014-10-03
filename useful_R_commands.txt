@@ -1,0 +1,12 @@
+Turning the x-axis labels 90 degrees in ggplot:
+
+theme(axis.text.x=element_text(angle=90))
+
+Example (draws bars of mycount for mystations):
+
+import rpy2.robjects as robjects
+
+out_rpy_object=robjects.r('rplotobject<-ggplot(data=mydataframe, aes(x=mystation, y=mycount)) + geom_bar(stat="identity")+theme(axis.text.x=element_text(angle=90))')
+
+out_rpy_object.plot()
+robjects.r.ggsave("my_bars_diagram.pdf")
