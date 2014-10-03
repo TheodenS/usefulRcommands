@@ -1,0 +1,3 @@
+Degrees of freedom example:
+
+decide the mean out of two variables> really only one datapoint.
