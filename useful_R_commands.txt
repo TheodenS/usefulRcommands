@@ -10,3 +10,13 @@ out_rpy_object=robjects.r('rplotobject<-ggplot(data=mydataframe, aes(x=mystation
 
 out_rpy_object.plot()
 robjects.r.ggsave("my_bars_diagram.pdf")
+
+
+
+
+
+Loading data from a csv with headers into a dataframe. Using R commands inside python
+
+dataf=robjects.r('mydata <- read.delim("'+pythonfilenamevar+'", sep="," , header=TRUE)')
+
+
